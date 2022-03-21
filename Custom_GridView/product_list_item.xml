@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgProduct"
+        android:layout_width="219dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtProductName"
+        android:layout_width="188dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="8dp"
+        android:text="Product Name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imgProduct"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/imgProduct"
+        app:layout_constraintTop_toBottomOf="@+id/imgProduct"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="186dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/imgProduct"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="@+id/imgProduct"
+        app:layout_constraintTop_toBottomOf="@+id/imgProduct" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
